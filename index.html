@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rahmane Hounaida — Portfolio</title>
+  <meta name="description" content="Portfolio of Rahmane Hounaida — Data Engineering & Web Development" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- GSAP CDN for animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <a href="#hero" aria-label="Go to top">
+          <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" stroke-width="4"/>
+            <text x="50%" y="54%" text-anchor="middle" font-size="36" fill="currentColor" font-family="Inter, sans-serif">RH</text>
+          </svg>
+        </a>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1 id="name">Rahmane Hounaida</h1>
+        <h2 class="subtitle">Master 1 — Data Engineering & Web Technologies</h2>
+
+        <p class="hero-text">
+          I build web apps, data pipelines, and interactive 3D assistants. I enjoy turning ideas into usable interfaces and integrating AI for smarter user experiences.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+
+        <div class="meta">
+          <span>📍 Setif, Algeria</span>
+          <span>📧 <a href="mailto:hounaida.rahmane00@gmail.com">hounaida.rahmane00@gmail.com</a></span>
+          <span>📞 0794923064</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- Decorative card with small animation -->
+        <div class="profile-card" aria-hidden="true">
+          <div class="profile-surface">
+            <div class="profile-content">
+              <div class="avatar">
+                <!-- simple avatar placeholder -->
+                <svg viewBox="0 0 120 120" class="avatar-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Avatar placeholder">
+                  <rect width="120" height="120" rx="16" fill="#eef2ff"></rect>
+                  <circle cx="60" cy="44" r="22" fill="#c7d2fe"></circle>
+                  <rect x="20" y="76" width="80" height="22" rx="6" fill="#c7d2fe"></rect>
+                </svg>
+              </div>
+              <div class="profile-meta">
+                <div class="meta-line"><strong>Master 1</strong><span>Data Engineering</span></div>
+                <div class="meta-line"><strong>Skills</strong><span>Python · JS · SQL</span></div>
+                <div class="meta-line"><strong>Open to</strong><span>Internships & Projects</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-badges">
+            <span class="badge">Web</span>
+            <span class="badge">3D</span>
+            <span class="badge">AI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h3 class="section-title">About</h3>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a Master 1 student in Data Engineering and Web Development at Ferhat Abbas University, Setif.
+            I build full-stack web projects, data management systems, and interactive 3D assistant features.
+            I like combining front-end UI with backend/data logic to deliver polished, reliable products.
+          </p>
+
+          <ul class="about-list">
+            <li><strong>Education:</strong> Master 1 — Data Engineering & Web Development (2024–2025)</li>
+            <li><strong>Bachelor:</strong> Computer Science (2020–2023)</li>
+            <li><strong>Tools:</strong> VSCode, XAMPP, Android Studio, Blender, Adobe XD</li>
+            <li><strong>OS:</strong> Windows, Ubuntu, Kali</li>
+          </ul>
+        </div>
+
+        <div class="about-stats" aria-hidden="true">
+          <div class="stat">
+            <div class="stat-value">5+</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">3</div>
+            <div class="stat-label">Major Web Apps</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">1</div>
+            <div class="stat-label">Industry Internship</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h3 class="section-title">Technical Skills</h3>
+
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="skill-head">
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-level">85%</div>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-fill="85"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <div class="skill-name">Python</div>
+            <div class="skill-level">80%</div>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-fill="80"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <div class="skill-name">HTML & CSS</div>
+            <div class="skill-level">90%</div>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-fill="90"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <div class="skill-name">SQL / Databases</div>
+            <div class="skill-level">75%</div>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-fill="75"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <div class="skill-name">3D & Blender</div>
+            <div class="skill-level">70%</div>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-fill="70"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <div class="skill-name">PHP / Backend</div>
+            <div class="skill-level">65%</div>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-fill="65"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h3 class="section-title">Selected Projects</h3>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="120" rx="8" fill="#f8fafc"/></svg>
+          </div>
+          <div class="project-body">
+            <h4 class="project-title">E-commerce Website</h4>
+            <p class="project-desc">Products management, seller authentication, and a MySQL product database. Admin features to add/remove products and inventory management.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>PHP</span><span>MySQL</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-thumb"><svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="120" rx="8" fill="#fef3c7"/></svg></div>
+          <div class="project-body">
+            <h4 class="project-title">Electronic Medical Records</h4>
+            <p class="project-desc">Authentication for doctors & patients, patient history per doctor, appointment scheduling and planning for clinicians.</p>
+            <div class="project-tags"><span>PHP</span><span>SQL</span><span>UX</span></div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-thumb"><svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="120" rx="8" fill="#ede9fe"/></svg></div>
+          <div class="project-body">
+            <h4 class="project-title">UX/UI Mobile Interfaces</h4>
+            <p class="project-desc">Designs for delivery app, real-estate rentals, furniture marketplace, and event planning — prototypes made with Adobe XD.</p>
+            <div class="project-tags"><span>Adobe XD</span><span>Figma</span><span>UI</span></div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card">
+          <div class="project-thumb"><svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="120" rx="8" fill="#dcfce7"/></svg></div>
+          <div class="project-body">
+            <h4 class="project-title">3D Virtual Assistant</h4>
+            <p class="project-desc">3D avatar integrated into a web page (GLB), voice recognition, AI-generated responses and images, Blender for modeling and animation.</p>
+            <div class="project-tags"><span>Three.js</span><span>Blender</span><span>Speech</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section alt">
+    <div class="container contact-grid">
+      <div class="contact-left">
+        <h3 class="section-title">Contact</h3>
+        <p>If you'd like to collaborate or have any questions — feel free to reach out.</p>
+
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:hounaida.rahmane00@gmail.com">hounaida.rahmane00@gmail.com</a></li>
+          <li><strong>Phone:</strong> 0794923064</li>
+          <li><strong>Location:</strong> Setif, Algeria</li>
+        </ul>
+
+        <div class="socials">
+          <a href="#" class="social">LinkedIn</a>
+          <a href="#" class="social">GitHub</a>
+        </div>
+      </div>
+
+      <form class="contact-form" action="mailto:hounaida.rahmane00@gmail.com" method="post" enctype="text/plain">
+        <label>
+          <span>Your name</span>
+          <input type="text" name="name" required>
+        </label>
+
+        <label>
+          <span>Your email</span>
+          <input type="email" name="email" required>
+        </label>
+
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Send</button>
+          <button type="reset" class="btn btn-ghost">Reset</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div>© <span id="year"></span> Rahmane Hounaida — Built with ❤️</div>
+      <div class="footer-links">
+        <a href="#hero">Top</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
