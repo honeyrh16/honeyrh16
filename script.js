@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // set year
+  // set yearr
   document.getElementById('year').textContent = new Date().getFullYear();
 
   // small entrance animations
